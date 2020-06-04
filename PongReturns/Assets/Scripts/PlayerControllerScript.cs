@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class PlayerControllerScript : PaddleBehaviourScript
+public class PlayerControllerScript : MonoBehaviour
 {
     public float paddleSpeed = 1f;
     Rigidbody2D paddleBody;

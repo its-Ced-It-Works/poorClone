@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: 720715335}
   m_Layer: 0
   m_Name: Paddle
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -344,7 +344,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f0eedfa7c3e8d941b3c3bf2d0a6d133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 100
   paddleSpeed: 500
 --- !u!50 &720715331
 Rigidbody2D:
@@ -467,6 +466,7 @@ GameObject:
   - component: {fileID: 767635202}
   - component: {fileID: 767635201}
   - component: {fileID: 767635200}
+  - component: {fileID: 767635205}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -572,6 +572,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &767635205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767635199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad1ecbcd2bb3044398ac6457b1c341b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Power: 100
 --- !u!1 &792794057
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,7 +635,7 @@ GameObject:
   - component: {fileID: 1359581688}
   m_Layer: 0
   m_Name: AI
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -747,7 +760,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dd326b0d35d01a43a2d6214eec0bbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 100
 --- !u!1 &1378684700
 GameObject:
   m_ObjectHideFlags: 0
@@ -960,7 +972,7 @@ GameObject:
   - component: {fileID: 1867476567}
   m_Layer: 0
   m_Name: TopWall
-  m_TagString: Untagged
+  m_TagString: TopWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1066,7 +1078,7 @@ GameObject:
   - component: {fileID: 2018377246}
   m_Layer: 0
   m_Name: BottomWall
-  m_TagString: Untagged
+  m_TagString: BottomWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
